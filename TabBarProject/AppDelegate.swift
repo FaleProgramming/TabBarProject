@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		//バーの色を変える
+		UITabBar.appearance().barTintColor = UIColor.orange
+		
+		//アイコンの色の設定
+		UITabBar.appearance().tintColor = UIColor.black
+		//選択されていない選択肢の色を変える
+		UITabBar.appearance().unselectedItemTintColor = UIColor.green
 		return true
 	}
 
